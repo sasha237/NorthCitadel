@@ -2,7 +2,7 @@
 NorthCitadel is a universal bot management system for one of the games, made by team of coworkers.
 
 # Why
-Just for fun in game. There are a lot of people worked with this solution. Keks-n, Badiboy, Name, Snapp, many other programmers and users. So in the two years I'm deploying this old project in the memory of our coworking.
+Just for fun in game. There are a lot of people worked with this solution. Keks-n, Badiboy, Name, Snapp, me, many other programmers and users. So in the two years I'm deploying this old project in the memory of our coworking.
 
 # Dependencies
 
