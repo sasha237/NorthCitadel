@@ -1,0 +1,83 @@
+Version:
+0.3 - 01/07/2007
+-Added real support for typed objects as input
+ (see website for details on how to use this, under "how to")
+ 
+
+Version:
+0.23 - 03/09/2006
+
+Description:
+-Improved error message when a matching method isn't found
+
+
+Version:
+0.22 - 03/07/2006
+
+Description:
+-Slight improvements to website
+-Empty arrays are now going to convert to a typed empty array if need be
+
+
+Version:
+0.21 - 02/26/2006
+
+Description:
+-Objects implementing IDictionary (ie, hashtable) are now properly being outputted as such (they were being
+outputted as weird arrays previously)
+-Renamed TypeObject to TypedObject and Class to UntypedObject in DataType enum
+-Added smart conversion for long/Int64
+-support input of typedobject and untyped objects (very experimental)
+-support for strings longer than 64K and XML (amf xml converted to XmlDocument)
+
+
+Version:
+0.2 - 2/21/2006
+
+Description:
+-Changed parameter type checking from Equals to IsAssignableFrom (zomg, my code didn't work with inheritance!)
+-Support for converting values to int-based enums
+-Support for strongly-typed arrays
+-Website document beafed up
+-Log4Net enabled (will log Error level if deserialization, execution or serialization throws an exception)
+
+Version:
+0.12 - 2/15/2006
+ 
+Description:
+-Renamed AmfErrro.cs to AmfError.cs (class name was correct and is unchanged)
+-Actually fixed the int overloading bug (wasn't included in 0.11)
+
+
+
+Version:
+0.11 -2/15/2006
+
+Description:
+-Added support for hashtable (in and out)
+-fixed int overloading
+-Exceptions generated during (and around) method invocation will return an error (catchable in the onStatus callback)
+ (exceptions generated during serialization/deserialization are thrown in-code, which typically results
+  in a flash script error)
+-Binding flag DeclaredOnly was added when searching for the method to invoke
+-Output support for char (treated as string)
+-When inputting a custom object the bytes are read and discarded, still have to figure out best way to deal
+ with it. This is also true for typed objects.
+ 
+ Known Bugs:
+ -Still don't like date return
+ -Little documentation
+  
+
+
+Version:
+0.1 - 02/13/2006
+
+Description:
+Initial release contains support for most base data types.
+
+Known Bugs:
+-Returning DateTime is less that useful
+
+
+  
